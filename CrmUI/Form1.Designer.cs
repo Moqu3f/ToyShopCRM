@@ -69,12 +69,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(249, 450);
+            this.ClientSize = new System.Drawing.Size(249, 375);
             this.Controls.Add(this.button_Zvit);
             this.Controls.Add(this.button_WorkShop);
             this.Controls.Add(this.button_Catalog);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(15, 15);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Text = "Магазин іграшок";
             this.ResumeLayout(false);
         }
 
