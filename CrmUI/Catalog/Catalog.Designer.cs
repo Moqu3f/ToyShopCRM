@@ -56,14 +56,14 @@ namespace CrmUI.Catalog
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox_EditCount = new System.Windows.Forms.TextBox();
+            this.button_Edit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_EditPrice = new System.Windows.Forms.TextBox();
+            this.textBox_EditCode = new System.Windows.Forms.TextBox();
+            this.textBox_EditName = new System.Windows.Forms.TextBox();
             this.textBox_FindEdit = new System.Windows.Forms.TextBox();
             this.listboxEdit = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
@@ -305,14 +305,14 @@ namespace CrmUI.Catalog
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.textBox_EditCount);
+            this.tabPage3.Controls.Add(this.button_Edit);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.textBox_EditPrice);
+            this.tabPage3.Controls.Add(this.textBox_EditCode);
+            this.tabPage3.Controls.Add(this.textBox_EditName);
             this.tabPage3.Controls.Add(this.textBox_FindEdit);
             this.tabPage3.Controls.Add(this.listboxEdit);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -332,23 +332,23 @@ namespace CrmUI.Catalog
             this.label9.TabIndex = 22;
             this.label9.Text = "Кількість товару";
             // 
-            // textBox1
+            // textBox_EditCount
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(272, 217);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 26);
-            this.textBox1.TabIndex = 21;
+            this.textBox_EditCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_EditCount.Location = new System.Drawing.Point(272, 217);
+            this.textBox_EditCount.Name = "textBox_EditCount";
+            this.textBox_EditCount.Size = new System.Drawing.Size(189, 26);
+            this.textBox_EditCount.TabIndex = 21;
             // 
-            // button1
+            // button_Edit
             // 
-            this.button1.Location = new System.Drawing.Point(272, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 67);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Видалити";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Edit.Location = new System.Drawing.Point(272, 253);
+            this.button_Edit.Name = "button_Edit";
+            this.button_Edit.Size = new System.Drawing.Size(180, 67);
+            this.button_Edit.TabIndex = 20;
+            this.button_Edit.Text = "Редагувати";
+            this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
             // 
             // label10
             // 
@@ -377,32 +377,29 @@ namespace CrmUI.Catalog
             this.label12.TabIndex = 17;
             this.label12.Text = "Код товару";
             // 
-            // textBox2
+            // textBox_EditPrice
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(272, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 26);
-            this.textBox2.TabIndex = 14;
+            this.textBox_EditPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_EditPrice.Location = new System.Drawing.Point(272, 151);
+            this.textBox_EditPrice.Name = "textBox_EditPrice";
+            this.textBox_EditPrice.Size = new System.Drawing.Size(189, 26);
+            this.textBox_EditPrice.TabIndex = 14;
             // 
-            // textBox3
+            // textBox_EditCode
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(272, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 26);
-            this.textBox3.TabIndex = 15;
+            this.textBox_EditCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_EditCode.Location = new System.Drawing.Point(272, 32);
+            this.textBox_EditCode.Name = "textBox_EditCode";
+            this.textBox_EditCode.Size = new System.Drawing.Size(189, 26);
+            this.textBox_EditCode.TabIndex = 15;
             // 
-            // textBox4
+            // textBox_EditName
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(272, 87);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 26);
-            this.textBox4.TabIndex = 16;
+            this.textBox_EditName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_EditName.Location = new System.Drawing.Point(272, 87);
+            this.textBox_EditName.Name = "textBox_EditName";
+            this.textBox_EditName.Size = new System.Drawing.Size(189, 26);
+            this.textBox_EditName.TabIndex = 16;
             // 
             // textBox_FindEdit
             // 
@@ -411,6 +408,8 @@ namespace CrmUI.Catalog
             this.textBox_FindEdit.Name = "textBox_FindEdit";
             this.textBox_FindEdit.Size = new System.Drawing.Size(260, 29);
             this.textBox_FindEdit.TabIndex = 13;
+            this.textBox_FindEdit.TextChanged += new System.EventHandler(this.textBox_FindEdit_TextChanged);
+            this.textBox_FindEdit.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_FindEdit_KeyUp);
             // 
             // listboxEdit
             // 
@@ -419,6 +418,7 @@ namespace CrmUI.Catalog
             this.listboxEdit.Name = "listboxEdit";
             this.listboxEdit.Size = new System.Drawing.Size(260, 342);
             this.listboxEdit.TabIndex = 12;
+            this.listboxEdit.SelectedIndexChanged += new System.EventHandler(this.listboxEdit_SelectedIndexChanged);
             // 
             // Catalog
             // 
@@ -440,14 +440,14 @@ namespace CrmUI.Catalog
 
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox_EditCount;
+        private System.Windows.Forms.Button button_Edit;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_EditPrice;
+        private System.Windows.Forms.TextBox textBox_EditCode;
+        private System.Windows.Forms.TextBox textBox_EditName;
         private System.Windows.Forms.TextBox textBox_FindEdit;
         private System.Windows.Forms.ListBox listboxEdit;
 
