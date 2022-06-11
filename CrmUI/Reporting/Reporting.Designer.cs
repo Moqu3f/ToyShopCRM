@@ -117,7 +117,7 @@ namespace CrmUI.Reporting
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Location = new System.Drawing.Point(25, 368);
+            this.metroTabControl1.Location = new System.Drawing.Point(15, 357);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.Size = new System.Drawing.Size(908, 211);
             this.metroTabControl1.TabIndex = 1;
