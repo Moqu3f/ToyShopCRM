@@ -66,17 +66,10 @@ namespace CrmUI.Catalog
             this.textBox_EditName = new System.Windows.Forms.TextBox();
             this.textBox_FindEdit = new System.Windows.Forms.TextBox();
             this.listboxEdit = new System.Windows.Forms.ListBox();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.metroTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -427,66 +420,11 @@ namespace CrmUI.Catalog
             this.listboxEdit.TabIndex = 12;
             this.listboxEdit.SelectedIndexChanged += new System.EventHandler(this.listboxEdit_SelectedIndexChanged);
             // 
-            // metroTabControl1
-            // 
-            this.metroTabControl1.Controls.Add(this.tabPage4);
-            this.metroTabControl1.Controls.Add(this.tabPage5);
-            this.metroTabControl1.Controls.Add(this.tabPage6);
-            this.metroTabControl1.Controls.Add(this.tabPage7);
-            this.metroTabControl1.Controls.Add(this.tabPage8);
-            this.metroTabControl1.Location = new System.Drawing.Point(607, 41);
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(462, 393);
-            this.metroTabControl1.TabIndex = 1;
-            this.metroTabControl1.UseSelectable = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(454, 351);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "tabPage4";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 38);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(454, 351);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "tabPage5";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 38);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(454, 351);
-            this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "tabPage6";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 38);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(454, 351);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "tabPage7";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 38);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(454, 351);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "tabPage8";
-            // 
             // Catalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 513);
-            this.Controls.Add(this.metroTabControl1);
+            this.ClientSize = new System.Drawing.Size(621, 456);
             this.Controls.Add(this.tabControl1);
             this.Name = "Catalog";
             this.Text = "Catalog";
@@ -497,7 +435,6 @@ namespace CrmUI.Catalog
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.metroTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -548,7 +485,6 @@ namespace CrmUI.Catalog
 
         #endregion
 
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
