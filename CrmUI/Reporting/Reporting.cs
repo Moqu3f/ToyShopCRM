@@ -30,13 +30,21 @@ namespace CrmUI.Reporting
                 };
 
             financeArray = new string[3];
-            listView_Finance.View = View.Details;
-            listView_Finance.GridLines = true;
-            listView_Finance.FullRowSelect = true;
-            listView_Finance.Columns.Add("Код чека");
-            listView_Finance.Columns.Add("Прибуток");
-            listView_Finance.Columns.Add("Статус");
+            // listView_Finance.View = View.Details;
+            // listView_Finance.GridLines = true;
+            // listView_Finance.FullRowSelect = true;
+            // listView_Finance.Columns.Add("Код чека");
+            // listView_Finance.Columns.Add("Прибуток");
+            // listView_Finance.Columns.Add("Статус");
             
+            metroListView1.BeginUpdate();
+            metroListView1.Items.Clear();
+            metroListView1.View = View.Details;
+            metroListView1.Columns.Add("Код чека");
+            metroListView1.Columns.Add("Прибуток");
+            metroListView1.Columns.Add("Статус");
+            
+            ListViewItem lvi;
             foreach (var item in result.ToList())
             {
                 financeArray[0] = item.SheckCode.ToString();
@@ -61,28 +69,40 @@ namespace CrmUI.Reporting
                     financeArray[1] = "0";
 
                 }
+                
+                // itm = new ListViewItem(financeArray);
+                // listView_Finance.Items.Add(itm);
+                
+                lvi = new ListViewItem(financeArray);
+                metroListView1.Items.Add(lvi);
+            }
 
+            
+            metroListView1.Columns[0].TextAlign = HorizontalAlignment.Right;
+            metroListView1.Columns[1].TextAlign = HorizontalAlignment.Center;
+            metroListView1.Columns[2].TextAlign = HorizontalAlignment.Left;
+            
+            metroListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            metroListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            
+            metroListView1.EndUpdate();
+            metroListView1.AllowSorting = true;
                 
-                itm = new ListViewItem(financeArray);
-                listView_Finance.Items.Add(itm);
-            }
-            
-                
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
-            
-            listView1.Columns.Add("ProductName", 100);
-            listView1.Columns.Add("ProductPrice", 100);
-            
-            foreach (var item in listProduct)
-            {
-                tovarArray[0] = item.Name;
-                tovarArray[1] = item.Price.ToString();
-               
-                itm = new ListViewItem(tovarArray);
-                listView1.Items.Add(itm);
-            }
+            // listView1.View = View.Details;
+            // listView1.GridLines = true;
+            // listView1.FullRowSelect = true;
+            //
+            // listView1.Columns.Add("ProductName", 100);
+            // listView1.Columns.Add("ProductPrice", 100);
+            //
+            // foreach (var item in listProduct)
+            // {
+            //     tovarArray[0] = item.Name;
+            //     tovarArray[1] = item.Price.ToString();
+            //    
+            //     itm = new ListViewItem(tovarArray);
+            //     listView1.Items.Add(itm);
+            // }
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
