@@ -51,6 +51,7 @@
             button_catalog.Size = new System.Drawing.Size(436, 75);
             button_catalog.Style = MetroFramework.MetroColorStyle.White;
             button_catalog.TabIndex = 3;
+            button_catalog.TabStop = false;
             button_catalog.Text = "Робота з каталогом";
             button_catalog.Theme = MetroFramework.MetroThemeStyle.Light;
             button_catalog.UseSelectable = true;
@@ -65,6 +66,7 @@
             button_store.Size = new System.Drawing.Size(436, 84);
             button_store.Style = MetroFramework.MetroColorStyle.Blue;
             button_store.TabIndex = 4;
+            button_store.TabStop = false;
             button_store.Text = "Робота магазину";
             button_store.Theme = MetroFramework.MetroThemeStyle.Light;
             button_store.UseSelectable = true;
@@ -79,6 +81,7 @@
             button_report.Size = new System.Drawing.Size(436, 81);
             button_report.Style = MetroFramework.MetroColorStyle.Blue;
             button_report.TabIndex = 5;
+            button_report.TabStop = false;
             button_report.Text = "Звітність";
             button_report.Theme = MetroFramework.MetroThemeStyle.Light;
             button_report.UseSelectable = true;
