@@ -20,3 +20,28 @@ C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\bin\Debug\EntityFramewor
 C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\obj\Debug\CrmUI.WorkShop.WorkShop.resources
 C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\obj\Debug\CrmUI.Reporting.Reporting.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmUI.exe.config
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmUI.exe
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmUI.pdb
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmBL.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\EntityFramework.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\EntityFramework.SqlServer.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.Design.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.Fonts.dll
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmBL.pdb
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\CrmBL.dll.config
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\EntityFramework.xml
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\bin\Debug\EntityFramework.SqlServer.xml
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.AssemblyReference.cache
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.SuggestedBindingRedirects.cache
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.Catalog.Catalog.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.Form1.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.Properties.Resources.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.Reporting.Reporting.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.WorkShop.WorkShop.resources
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.GenerateResource.cache
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.CoreCompileInputs.cache
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.CopyComplete
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.exe
+D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.pdb

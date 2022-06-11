@@ -29,65 +29,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_Catalog = new System.Windows.Forms.Button();
-            this.button_WorkShop = new System.Windows.Forms.Button();
-            this.button_Zvit = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            MetroFramework.Controls.MetroButton button_catalog;
+            MetroFramework.Controls.MetroButton button_store;
+            MetroFramework.Controls.MetroButton button_report;
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            button_catalog = new MetroFramework.Controls.MetroButton();
+            button_store = new MetroFramework.Controls.MetroButton();
+            button_report = new MetroFramework.Controls.MetroButton();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button_Catalog
+            // button_catalog
             // 
-            this.button_Catalog.Location = new System.Drawing.Point(12, 12);
-            this.button_Catalog.Name = "button_Catalog";
-            this.button_Catalog.Size = new System.Drawing.Size(230, 89);
-            this.button_Catalog.TabIndex = 0;
-            this.button_Catalog.Text = "Робота з каталогом";
-            this.button_Catalog.UseVisualStyleBackColor = true;
-            this.button_Catalog.Click += new System.EventHandler(this.button_Catalog_Click);
+            button_catalog.BackColor = System.Drawing.SystemColors.Control;
+            button_catalog.Cursor = System.Windows.Forms.Cursors.Hand;
+            button_catalog.FontSize = MetroFramework.MetroButtonSize.Tall;
+            button_catalog.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            button_catalog.Location = new System.Drawing.Point(135, 81);
+            button_catalog.Name = "button_catalog";
+            button_catalog.Size = new System.Drawing.Size(436, 75);
+            button_catalog.Style = MetroFramework.MetroColorStyle.White;
+            button_catalog.TabIndex = 3;
+            button_catalog.Text = "Робота з каталогом";
+            button_catalog.Theme = MetroFramework.MetroThemeStyle.Light;
+            button_catalog.UseSelectable = true;
+            button_catalog.Click += new System.EventHandler(this.button_Catalog_Click);
             // 
-            // button_WorkShop
+            // button_store
             // 
-            this.button_WorkShop.Location = new System.Drawing.Point(12, 107);
-            this.button_WorkShop.Name = "button_WorkShop";
-            this.button_WorkShop.Size = new System.Drawing.Size(230, 89);
-            this.button_WorkShop.TabIndex = 1;
-            this.button_WorkShop.Text = "Робота магазину";
-            this.button_WorkShop.UseVisualStyleBackColor = true;
-            this.button_WorkShop.Click += new System.EventHandler(this.button_WorkShop_Click);
+            button_store.Cursor = System.Windows.Forms.Cursors.Hand;
+            button_store.FontSize = MetroFramework.MetroButtonSize.Tall;
+            button_store.Location = new System.Drawing.Point(135, 180);
+            button_store.Name = "button_store";
+            button_store.Size = new System.Drawing.Size(436, 84);
+            button_store.Style = MetroFramework.MetroColorStyle.Blue;
+            button_store.TabIndex = 4;
+            button_store.Text = "Робота магазину";
+            button_store.Theme = MetroFramework.MetroThemeStyle.Light;
+            button_store.UseSelectable = true;
+            button_store.Click += new System.EventHandler(this.button_WorkShop_Click);
             // 
-            // button_Zvit
+            // button_report
             // 
-            this.button_Zvit.Location = new System.Drawing.Point(13, 202);
-            this.button_Zvit.Name = "button_Zvit";
-            this.button_Zvit.Size = new System.Drawing.Size(229, 89);
-            this.button_Zvit.TabIndex = 2;
-            this.button_Zvit.Text = "Звітність";
-            this.button_Zvit.UseVisualStyleBackColor = true;
-            this.button_Zvit.Click += new System.EventHandler(this.button_Zvit_Click);
+            button_report.Cursor = System.Windows.Forms.Cursors.Hand;
+            button_report.FontSize = MetroFramework.MetroButtonSize.Tall;
+            button_report.Location = new System.Drawing.Point(135, 290);
+            button_report.Name = "button_report";
+            button_report.Size = new System.Drawing.Size(436, 81);
+            button_report.Style = MetroFramework.MetroColorStyle.Blue;
+            button_report.TabIndex = 5;
+            button_report.Text = "Звітність";
+            button_report.Theme = MetroFramework.MetroThemeStyle.Light;
+            button_report.UseSelectable = true;
+            button_report.Click += new System.EventHandler(this.button_Zvit_Click);
+            // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = null;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(249, 375);
-            this.Controls.Add(this.button_Zvit);
-            this.Controls.Add(this.button_WorkShop);
-            this.Controls.Add(this.button_Catalog);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.BackgroundImage = global::CrmUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(726, 496);
+            this.Controls.Add(button_report);
+            this.Controls.Add(button_store);
+            this.Controls.Add(button_catalog);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Магазин іграшок";
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.Button button_Zvit;
-
-        private System.Windows.Forms.Button button_Catalog;
+        private MetroFramework.Components.MetroStyleManager metroStyleManager1;
 
         #endregion
-
-        private System.Windows.Forms.Button button_WorkShop;
     }
 }
