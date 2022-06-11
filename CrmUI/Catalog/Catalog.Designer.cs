@@ -436,7 +436,6 @@ namespace CrmUI.Catalog
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         private System.Windows.Forms.TabPage tabPage3;

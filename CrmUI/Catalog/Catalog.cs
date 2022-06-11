@@ -28,6 +28,17 @@ namespace CrmUI.Catalog
             
         }
 
+        private void UpdateCatalog()
+        {
+            listBox1.DataSource = db.Products.ToList();
+            listboxEdit.DataSource = db.Products.ToList();
+            
+            listboxEdit.DisplayMember = "Code";
+            listBox1.ValueMember = "Code";
+            listBox1.DisplayMember = "Name";
+            
+        }
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
             //throw new System.NotImplementedException();
@@ -63,6 +74,8 @@ namespace CrmUI.Catalog
             {
                 db.Products.Add(new Product { Code = code, Name = name, Price = price, Count = count });
                 db.SaveChanges();
+                UpdateCatalog();
+                
                 MessageBox.Show($"Додано {code}-{name}-{price}-{count}");
             }
         }
