@@ -45,3 +45,6 @@ D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\C
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.csproj.CopyComplete
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.exe
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmUI\obj\Debug\CrmUI.pdb
+C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.Design.dll
+C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.dll
+C:\Users\user1\Desktop\ToyShop_lastLOL\ToyShopCRM\CrmUI\bin\Debug\MetroFramework.Fonts.dll

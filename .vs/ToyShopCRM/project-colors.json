@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d334215b-14aa-4abf-be75-161c76faf12a": {
+      "ProjectGuid": "d334215b-14aa-4abf-be75-161c76faf12a",
+      "DisplayName": "CrmUI",
+      "ColorIndex": 0
+    },
+    "73b276a9-7d88-4866-b2b4-073eda661b3c": {
+      "ProjectGuid": "73b276a9-7d88-4866-b2b4-073eda661b3c",
+      "DisplayName": "CrmBL",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
