@@ -22,3 +22,15 @@ D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\C
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmBL\obj\Debug\CrmBL.dll
 D:\Working\Freelance\Интернет магазин игрушек\ToyShopCRM\CrmBL\obj\Debug\CrmBL.pdb
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\CrmBL.dll.config
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\CrmBL.dll
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\CrmBL.pdb
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\EntityFramework.dll
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\EntityFramework.xml
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.csproj.AssemblyReference.cache
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.csproj.CoreCompileInputs.cache
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.dll
+D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.pdb

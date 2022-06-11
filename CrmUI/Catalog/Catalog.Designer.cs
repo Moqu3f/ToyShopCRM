@@ -44,16 +44,16 @@ namespace CrmUI.Catalog
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox_Delete_Count = new System.Windows.Forms.TextBox();
+            this.textBox_DeleteCount = new System.Windows.Forms.TextBox();
             this.button_Delete = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox_Delete_Price = new System.Windows.Forms.TextBox();
-            this.textBox_Delete_Code = new System.Windows.Forms.TextBox();
-            this.textBox_Delete_Name = new System.Windows.Forms.TextBox();
-            this.textBox_Find = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox_DeletePrice = new System.Windows.Forms.TextBox();
+            this.textBox_DeleteCode = new System.Windows.Forms.TextBox();
+            this.textBox_DeleteName = new System.Windows.Forms.TextBox();
+            this.textBox_FindDelete = new System.Windows.Forms.TextBox();
+            this.listbox_delete = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox_EditCount = new System.Windows.Forms.TextBox();
@@ -65,7 +65,7 @@ namespace CrmUI.Catalog
             this.textBox_EditCode = new System.Windows.Forms.TextBox();
             this.textBox_EditName = new System.Windows.Forms.TextBox();
             this.textBox_FindEdit = new System.Windows.Forms.TextBox();
-            this.listboxEdit = new System.Windows.Forms.ListBox();
+            this.listbox_edit = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -101,7 +101,6 @@ namespace CrmUI.Catalog
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Додавання товару";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button_Add
             // 
@@ -184,16 +183,16 @@ namespace CrmUI.Catalog
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox_Delete_Count);
+            this.tabPage2.Controls.Add(this.textBox_DeleteCount);
             this.tabPage2.Controls.Add(this.button_Delete);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox_Delete_Price);
-            this.tabPage2.Controls.Add(this.textBox_Delete_Code);
-            this.tabPage2.Controls.Add(this.textBox_Delete_Name);
-            this.tabPage2.Controls.Add(this.textBox_Find);
-            this.tabPage2.Controls.Add(this.listBox1);
+            this.tabPage2.Controls.Add(this.textBox_DeletePrice);
+            this.tabPage2.Controls.Add(this.textBox_DeleteCode);
+            this.tabPage2.Controls.Add(this.textBox_DeleteName);
+            this.tabPage2.Controls.Add(this.textBox_FindDelete);
+            this.tabPage2.Controls.Add(this.listbox_delete);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -211,14 +210,14 @@ namespace CrmUI.Catalog
             this.label8.TabIndex = 11;
             this.label8.Text = "Кількість товару";
             // 
-            // textBox_Delete_Count
+            // textBox_DeleteCount
             // 
-            this.textBox_Delete_Count.Enabled = false;
-            this.textBox_Delete_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Delete_Count.Location = new System.Drawing.Point(272, 217);
-            this.textBox_Delete_Count.Name = "textBox_Delete_Count";
-            this.textBox_Delete_Count.Size = new System.Drawing.Size(189, 26);
-            this.textBox_Delete_Count.TabIndex = 10;
+            this.textBox_DeleteCount.Enabled = false;
+            this.textBox_DeleteCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_DeleteCount.Location = new System.Drawing.Point(272, 217);
+            this.textBox_DeleteCount.Name = "textBox_DeleteCount";
+            this.textBox_DeleteCount.Size = new System.Drawing.Size(189, 26);
+            this.textBox_DeleteCount.TabIndex = 10;
             // 
             // button_Delete
             // 
@@ -257,50 +256,50 @@ namespace CrmUI.Catalog
             this.label6.TabIndex = 6;
             this.label6.Text = "Код товару";
             // 
-            // textBox_Delete_Price
+            // textBox_DeletePrice
             // 
-            this.textBox_Delete_Price.Enabled = false;
-            this.textBox_Delete_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Delete_Price.Location = new System.Drawing.Point(272, 151);
-            this.textBox_Delete_Price.Name = "textBox_Delete_Price";
-            this.textBox_Delete_Price.Size = new System.Drawing.Size(189, 26);
-            this.textBox_Delete_Price.TabIndex = 3;
+            this.textBox_DeletePrice.Enabled = false;
+            this.textBox_DeletePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_DeletePrice.Location = new System.Drawing.Point(272, 151);
+            this.textBox_DeletePrice.Name = "textBox_DeletePrice";
+            this.textBox_DeletePrice.Size = new System.Drawing.Size(189, 26);
+            this.textBox_DeletePrice.TabIndex = 3;
             // 
-            // textBox_Delete_Code
+            // textBox_DeleteCode
             // 
-            this.textBox_Delete_Code.Enabled = false;
-            this.textBox_Delete_Code.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Delete_Code.Location = new System.Drawing.Point(272, 32);
-            this.textBox_Delete_Code.Name = "textBox_Delete_Code";
-            this.textBox_Delete_Code.Size = new System.Drawing.Size(189, 26);
-            this.textBox_Delete_Code.TabIndex = 4;
+            this.textBox_DeleteCode.Enabled = false;
+            this.textBox_DeleteCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_DeleteCode.Location = new System.Drawing.Point(272, 32);
+            this.textBox_DeleteCode.Name = "textBox_DeleteCode";
+            this.textBox_DeleteCode.Size = new System.Drawing.Size(189, 26);
+            this.textBox_DeleteCode.TabIndex = 4;
             // 
-            // textBox_Delete_Name
+            // textBox_DeleteName
             // 
-            this.textBox_Delete_Name.Enabled = false;
-            this.textBox_Delete_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Delete_Name.Location = new System.Drawing.Point(272, 87);
-            this.textBox_Delete_Name.Name = "textBox_Delete_Name";
-            this.textBox_Delete_Name.Size = new System.Drawing.Size(189, 26);
-            this.textBox_Delete_Name.TabIndex = 5;
+            this.textBox_DeleteName.Enabled = false;
+            this.textBox_DeleteName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_DeleteName.Location = new System.Drawing.Point(272, 87);
+            this.textBox_DeleteName.Name = "textBox_DeleteName";
+            this.textBox_DeleteName.Size = new System.Drawing.Size(189, 26);
+            this.textBox_DeleteName.TabIndex = 5;
             // 
-            // textBox_Find
+            // textBox_FindDelete
             // 
-            this.textBox_Find.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Find.Location = new System.Drawing.Point(6, 358);
-            this.textBox_Find.Name = "textBox_Find";
-            this.textBox_Find.Size = new System.Drawing.Size(260, 29);
-            this.textBox_Find.TabIndex = 1;
-            this.textBox_Find.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_Find_KeyUp);
+            this.textBox_FindDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_FindDelete.Location = new System.Drawing.Point(6, 358);
+            this.textBox_FindDelete.Name = "textBox_FindDelete";
+            this.textBox_FindDelete.Size = new System.Drawing.Size(260, 29);
+            this.textBox_FindDelete.TabIndex = 1;
+            this.textBox_FindDelete.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_Find_KeyUp);
             // 
-            // listBox1
+            // listbox_delete
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(260, 342);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listbox_delete.FormattingEnabled = true;
+            this.listbox_delete.Location = new System.Drawing.Point(6, 6);
+            this.listbox_delete.Name = "listbox_delete";
+            this.listbox_delete.Size = new System.Drawing.Size(260, 342);
+            this.listbox_delete.TabIndex = 0;
+            this.listbox_delete.SelectedIndexChanged += new System.EventHandler(this.listboxDelete_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -314,7 +313,7 @@ namespace CrmUI.Catalog
             this.tabPage3.Controls.Add(this.textBox_EditCode);
             this.tabPage3.Controls.Add(this.textBox_EditName);
             this.tabPage3.Controls.Add(this.textBox_FindEdit);
-            this.tabPage3.Controls.Add(this.listboxEdit);
+            this.tabPage3.Controls.Add(this.listbox_edit);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -408,17 +407,16 @@ namespace CrmUI.Catalog
             this.textBox_FindEdit.Name = "textBox_FindEdit";
             this.textBox_FindEdit.Size = new System.Drawing.Size(260, 29);
             this.textBox_FindEdit.TabIndex = 13;
-            this.textBox_FindEdit.TextChanged += new System.EventHandler(this.textBox_FindEdit_TextChanged);
             this.textBox_FindEdit.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox_FindEdit_KeyUp);
             // 
-            // listboxEdit
+            // listbox_edit
             // 
-            this.listboxEdit.FormattingEnabled = true;
-            this.listboxEdit.Location = new System.Drawing.Point(6, 6);
-            this.listboxEdit.Name = "listboxEdit";
-            this.listboxEdit.Size = new System.Drawing.Size(260, 342);
-            this.listboxEdit.TabIndex = 12;
-            this.listboxEdit.SelectedIndexChanged += new System.EventHandler(this.listboxEdit_SelectedIndexChanged);
+            this.listbox_edit.FormattingEnabled = true;
+            this.listbox_edit.Location = new System.Drawing.Point(6, 6);
+            this.listbox_edit.Name = "listbox_edit";
+            this.listbox_edit.Size = new System.Drawing.Size(260, 342);
+            this.listbox_edit.TabIndex = 12;
+            this.listbox_edit.SelectedIndexChanged += new System.EventHandler(this.listboxEdit_SelectedIndexChanged);
             // 
             // Catalog
             // 
@@ -449,23 +447,23 @@ namespace CrmUI.Catalog
         private System.Windows.Forms.TextBox textBox_EditCode;
         private System.Windows.Forms.TextBox textBox_EditName;
         private System.Windows.Forms.TextBox textBox_FindEdit;
-        private System.Windows.Forms.ListBox listboxEdit;
+        private System.Windows.Forms.ListBox listbox_edit;
 
         private System.Windows.Forms.TextBox textBox_Count;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox_Delete_Count;
+        private System.Windows.Forms.TextBox textBox_DeleteCount;
 
         private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox_Delete_Price;
-        private System.Windows.Forms.TextBox textBox_Delete_Code;
-        private System.Windows.Forms.TextBox textBox_Delete_Name;
+        private System.Windows.Forms.TextBox textBox_DeletePrice;
+        private System.Windows.Forms.TextBox textBox_DeleteCode;
+        private System.Windows.Forms.TextBox textBox_DeleteName;
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox_Find;
+        private System.Windows.Forms.ListBox listbox_delete;
+        private System.Windows.Forms.TextBox textBox_FindDelete;
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

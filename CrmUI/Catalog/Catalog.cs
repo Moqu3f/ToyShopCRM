@@ -20,33 +20,24 @@ namespace CrmUI.Catalog
             this.db = db;
             
             //TestData(db);
-            listBox1.DataSource = db.Products.ToList();
-            listboxEdit.DataSource = db.Products.ToList();
-            listboxEdit.DisplayMember = "Code";
-            listBox1.ValueMember = "Code";
-            listBox1.DisplayMember = "Name";
+            UpdateCatalog();
             
         }
 
         private void UpdateCatalog()
         {
-            listBox1.DataSource = db.Products.ToList();
-            listboxEdit.DataSource = db.Products.ToList();
+            listbox_delete.DataSource = db.Products.ToList();
+            listbox_edit.DataSource = db.Products.ToList();
             
-            listboxEdit.DisplayMember = "Code";
-            listBox1.ValueMember = "Code";
-            listBox1.DisplayMember = "Name";
+            listbox_edit.DisplayMember = "Code";
+            listbox_delete.ValueMember = "Code";
+            listbox_delete.DisplayMember = "Name";
             
         }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            //throw new System.NotImplementedException();
-        }
-
+        
         private void textBox_Find_KeyUp(object sender, KeyEventArgs e)
         {
-            listBox1.DataSource = db.Products.Where(q => q.Name.Contains(((TextBox)sender).Text)).ToList();
+            listbox_delete.DataSource = db.Products.Where(q => q.Name.Contains(((TextBox)sender).Text)).ToList();
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
@@ -56,7 +47,7 @@ namespace CrmUI.Catalog
                 db.Products.Remove(selectedProduct);
                 db.SaveChanges();
             }
-            listBox1.DataSource = db.Products.ToList();
+            listbox_delete.DataSource = db.Products.ToList();
         }
 
         private void button_Add_Click(object sender, EventArgs e)
@@ -79,17 +70,7 @@ namespace CrmUI.Catalog
                 MessageBox.Show($"Додано {code}-{name}-{price}-{count}");
             }
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedProduct = (Product)listBox1.SelectedItem;
-            //listBox1.DataSource = db.Products.ToList();
-
-            textBox_EditName.Text = selectedProduct.Name;
-            textBox_EditCount.Text = selectedProduct.Count.ToString();
-            textBox_EditCode.Text = selectedProduct.Code;
-            textBox_EditPrice.Text = selectedProduct.Price.ToString(CultureInfo.InvariantCulture);
-        }
+        
 
         #region TestData
 
@@ -149,32 +130,48 @@ namespace CrmUI.Catalog
                 selectedProduct.Price = price;
 
                 db.SaveChanges();
+                UpdateCatalog();
                 MessageBox.Show($"Редаговано {name}-{code}-{count}-{price}");
             }
-            
-
-
         }
-
-        private void textBox_FindEdit_TextChanged(object sender, EventArgs e)
+        
+        private void listboxEdit_SeelectedIndexChanged(object snder, EventArgs e)
         {
-            
-        }
-
-        private void listboxEdit_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedProduct = (Product)listboxEdit.SelectedItem;
+            selectedProduct = (Product)listbox_edit.SelectedItem;
             //listBox1.DataSource = db.Products.ToList();
 
-            textBox_Delete_Name.Text = selectedProduct.Name;
-            textBox_Delete_Count.Text = selectedProduct.Count.ToString();
-            textBox_Delete_Code.Text = selectedProduct.Code;
-            textBox_Delete_Price.Text = selectedProduct.Price.ToString(CultureInfo.InvariantCulture);
+            textBox_EditName.Text = selectedProduct.Name;
+            textBox_EditCount.Text = selectedProduct.Count.ToString();
+            textBox_EditCode.Text = selectedProduct.Code;
+            textBox_EditPrice.Text = selectedProduct.Price.ToString(CultureInfo.InvariantCulture);
         }
 
         private void textBox_FindEdit_KeyUp(object sender, KeyEventArgs e)
         {
-            listboxEdit.DataSource = db.Products.Where(q => q.Name.Contains(((TextBox)sender).Text)).ToList();
+            listbox_edit.DataSource = db.Products.Where(q => q.Code.Contains(((TextBox)sender).Text)).ToList();
         }
+
+        private void listboxEdit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedProduct = (Product)listbox_edit.SelectedItem;
+            //listBox1.DataSource = db.Products.ToList();
+
+            textBox_EditName.Text = selectedProduct.Name;
+            textBox_EditCount.Text = selectedProduct.Count.ToString();
+            textBox_EditCode.Text = selectedProduct.Code;
+            textBox_EditPrice.Text = selectedProduct.Price.ToString(CultureInfo.InvariantCulture);
+        }
+
+        private void listboxDelete_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedProduct = (Product)listbox_delete.SelectedItem;
+            //listBox1.DataSource = db.Products.ToList();
+
+            textBox_DeleteName.Text = selectedProduct.Name;
+            textBox_DeleteCount.Text = selectedProduct.Count.ToString();
+            textBox_DeleteCode.Text = selectedProduct.Code;
+            textBox_DeletePrice.Text = selectedProduct.Price.ToString(CultureInfo.InvariantCulture);
+        }
+        
     }
 }
