@@ -36,8 +36,11 @@ namespace CrmUI.Reporting
             this.listView1 = new System.Windows.Forms.ListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.listView_Finance = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -45,6 +48,7 @@ namespace CrmUI.Reporting
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(15, 16);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -64,9 +68,9 @@ namespace CrmUI.Reporting
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(6, 161);
+            this.listView1.Location = new System.Drawing.Point(6, 162);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(754, 232);
+            this.listView1.Size = new System.Drawing.Size(754, 217);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Tile;
@@ -91,6 +95,25 @@ namespace CrmUI.Reporting
             this.tabPage4.Text = "Списано";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.listView_Finance);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(766, 399);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "Фінанси";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // listView_Finance
+            // 
+            this.listView_Finance.Location = new System.Drawing.Point(6, 90);
+            this.listView_Finance.Name = "listView_Finance";
+            this.listView_Finance.Size = new System.Drawing.Size(754, 303);
+            this.listView_Finance.TabIndex = 0;
+            this.listView_Finance.UseCompatibleStateImageBehavior = false;
+            // 
             // Reporting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,8 +124,12 @@ namespace CrmUI.Reporting
             this.Text = "Reporting";
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ListView listView_Finance;
 
         private System.Windows.Forms.ListView listView1;
 

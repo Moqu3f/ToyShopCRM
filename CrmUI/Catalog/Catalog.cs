@@ -11,7 +11,7 @@ namespace CrmUI.Catalog
     {
         private CrmContext db;
         private Cart _cart; 
-        //private CashDesk _cashDesk;
+        private CashDesk _cashDesk;
         private Product selectedProduct;
         public Catalog(CrmContext db)
         {
@@ -96,31 +96,24 @@ namespace CrmUI.Catalog
             //
             //
             //
-            // var card = new Cart();
-            // var card2 = new Cart();
-            //
-            //
-            //   
-            // card.Add(productList[1]);
-            // card.Add(productList[2]);
-            // card.Add(productList[0]);
-            // card.Add(productList[0]);
-            // card.Add(productList[0]);
-            //
-            //
-            // card2.Add(productList[2]);
-            // card2.Add(productList[2]);
-            // card2.Add(productList[5]);
-            // card2.Add(productList[5]);
-            // card2.Add(productList[5]);
-            //
-            //
-            // CashDesk _cashDesk = new CashDesk(db)
-            // {
-            //     IsModel = false
-            // };
-            // _cashDesk.AddCard(card);
-            // _cashDesk.Sell(Status.Sells);
+            var card = new Cart();
+            var card2 = new Cart();
+            card.Add(productList[1]);
+            card.Add(productList[2]);
+            card.Add(productList[0]);
+            card.Add(productList[0]);
+            card.Add(productList[0]);
+            card2.Add(productList[2]);
+            card2.Add(productList[2]);
+            card2.Add(productList[5]);
+            card2.Add(productList[5]);
+            card2.Add(productList[5]);
+            CashDesk _cashDesk = new CashDesk(db)
+            {
+                IsModel = false
+            };
+            _cashDesk.AddCard(card);
+            _cashDesk.Sell(Status.Sells);
             db.SaveChanges();
 
         }

@@ -71,8 +71,9 @@ namespace CrmBL.model
                         {
                             db.Sells.Add(sell);
                         }
-                            product.Count++;
-                            sum += product.Price;
+                            
+                        product.Count++; 
+                        sum += product.Price;
                         
                     }
                 }
