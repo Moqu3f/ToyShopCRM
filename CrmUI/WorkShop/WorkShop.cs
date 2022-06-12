@@ -28,16 +28,6 @@ namespace CrmUI.WorkShop
             product_SellItem = new List<Product>();
             InitializeComponent();
             this.db = db;
-            listBox1.DataSource = db.Products.ToList();
-            listBox1.DisplayMember = "Name";
-            listBox2.DisplayMember = "Name";
-
-            listBox3.DataSource = db.Products.ToList();
-            listBox3.DisplayMember = "Name";
-
-            listBox4.DataSource = db.Checks.Where(q => q.Status == Status.Sells).ToList();
-            listBox4.DisplayMember = "Id";
-
 
             #region ListView Sells
             SellsItems = new string[4];
@@ -63,6 +53,7 @@ namespace CrmUI.WorkShop
             listview_sells.Columns[2].TextAlign = HorizontalAlignment.Left;
             listview_sells.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listview_sells.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            listview_sells.GridLines = true;
             listview_sells.EndUpdate();
             listview_sells.AllowSorting = true;
             #endregion
@@ -81,6 +72,7 @@ namespace CrmUI.WorkShop
             listview_sellOrders.Columns[2].TextAlign = HorizontalAlignment.Center;
             listview_sellOrders.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listview_sellOrders.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            listview_sellOrders.GridLines = true;
             listview_sellOrders.EndUpdate();
             listview_sellOrders.AllowSorting = true;
 
@@ -112,6 +104,7 @@ namespace CrmUI.WorkShop
             listview_writeoff.Columns[2].TextAlign = HorizontalAlignment.Left;
             listview_writeoff.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listview_writeoff.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            listview_writeoff.GridLines = true;
             listview_writeoff.EndUpdate();
             listview_writeoff.AllowSorting = true;
             #endregion
@@ -143,6 +136,7 @@ namespace CrmUI.WorkShop
             listview_returnedChecks.Columns[2].TextAlign = HorizontalAlignment.Center;
             listview_returnedChecks.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listview_returnedChecks.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            listview_returnedChecks.GridLines = true;
             listview_returnedChecks.EndUpdate();
             listview_returnedChecks.AllowSorting = true;
             #endregion
@@ -158,51 +152,16 @@ namespace CrmUI.WorkShop
             listview_checkItems.Columns[1].TextAlign = HorizontalAlignment.Center;
             listview_checkItems.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             listview_checkItems.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-           
+            listview_checkItems.GridLines = true;
             listview_checkItems.EndUpdate();
             listview_checkItems.AllowSorting = true;
             #endregion
 
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //selectedItem = (Product)listBox1.SelectedItem;
-        }
+        
 
         Product selectedItem = null;
-
-        private void button_Add_Click(object sender, EventArgs e)
-        {
-            selectedItem = (Product)listBox1.SelectedItem;
-            listBox2.Items.Add(selectedItem);
-            _cart.Add(selectedItem);
-
-            textBox_Sum.Text = _cart.Price + "";
-        }
-
-        private void button_Clear_Click(object sender, EventArgs e)
-        {
-            listBox2.Items.Clear();
-            textBox_Sum.Text = String.Empty;
-        }
-
-        private void button_Sell_Click(object sender, EventArgs e)
-        {
-            CashDesk _cashDesk = new CashDesk(db)
-            {
-                IsModel = false
-            };
-            _cashDesk.AddCard(_cart);
-            _cashDesk.Sell(Status.Sells);
-
-            db.SaveChanges();
-            MessageBox.Show("Успішна покупка");
-            listBox2.Items.Clear();
-            db.SaveChanges();
-            _cart = new Cart();
-        }
-
+        
         private Product SelectedWriteOffListBox;
 
         private void button_WriteOff_Click(object sender, EventArgs e)
@@ -218,56 +177,10 @@ namespace CrmUI.WorkShop
             db.SaveChanges();
             MessageBox.Show("Списано");
         }
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SelectedWriteOffListBox = (Product)listBox3.SelectedItem;
-
-        }
-
-
-
-
+        
+        
         private Check ItemReturn = null;
-
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = null;
-            dataGridView1.Rows.Clear();
-            dataGridView1.Refresh();
-
-
-            ItemReturn = (Check)listBox4.SelectedItem;
-            var result = from sell in db.Sells
-                         join p in db.Products on sell.ProductId equals p.Id
-                         join c in db.Checks on sell.CheckId equals c.Id
-                         where
-                             c.Id == ItemReturn.Id
-                         select new
-                         {
-                             Name = p.Name,
-                             Price = p.Price,
-                         };
-
-
-
-            dataGridView1.DataSource = result.ToList();
-        }
-
-
-        private void button_Return_Click(object sender, EventArgs e)
-        {
-            CashDesk _cashDesk = new CashDesk(db)
-            {
-                IsModel = true
-            };
-            _cashDesk.Cart = new Cart();
-            var sum = _cashDesk.ReturnProduct(ItemReturn);
-            MessageBox.Show($"Покупку №{ItemReturn.Id} повернено на суму {sum}");
-
-
-            listBox4.DataSource = db.Checks.Where(q => q.Status == Status.Sells).ToList();
-        }
+        
         string[] SellsItemsOrder = new string[4];
 
         private void button_addOrder_Click(object sender, EventArgs e)
@@ -387,8 +300,6 @@ namespace CrmUI.WorkShop
             {
                 MessageBox.Show("Нічого не вибратороно");
             }
-
-
         }
 
         private void listview_sells_SelectedIndexChanged(object sender, EventArgs e)

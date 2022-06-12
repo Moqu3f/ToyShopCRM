@@ -28,24 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.button_Return = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Sum = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button_Sell = new System.Windows.Forms.Button();
-            this.button_Add = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button_Clear = new System.Windows.Forms.Button();
-            this.TabPage2 = new System.Windows.Forms.TabPage();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.button_WriteOff = new System.Windows.Forms.Button();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -73,11 +55,6 @@
             this.button_returnAction = new MetroFramework.Controls.MetroButton();
             this.listview_checkItems = new MetroFramework.Controls.MetroListView();
             this.listview_returnedChecks = new MetroFramework.Controls.MetroListView();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.TabPage2.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.metroPanel1.SuspendLayout();
@@ -88,193 +65,14 @@
             this.metroPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.listBox4);
-            this.tabPage3.Controls.Add(this.button_Return);
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(780, 412);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Повернення";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // listBox4
-            // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(6, 16);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(206, 342);
-            this.listBox4.TabIndex = 4;
-            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
-            // 
-            // button_Return
-            // 
-            this.button_Return.Location = new System.Drawing.Point(219, 372);
-            this.button_Return.Name = "button_Return";
-            this.button_Return.Size = new System.Drawing.Size(538, 33);
-            this.button_Return.TabIndex = 3;
-            this.button_Return.Text = "Повернути";
-            this.button_Return.UseVisualStyleBackColor = true;
-            this.button_Return.Click += new System.EventHandler(this.button_Return_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(219, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(538, 354);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 364);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.TabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(788, 438);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox_Sum);
-            this.tabPage1.Controls.Add(this.listBox2);
-            this.tabPage1.Controls.Add(this.button_Sell);
-            this.tabPage1.Controls.Add(this.button_Add);
-            this.tabPage1.Controls.Add(this.listBox1);
-            this.tabPage1.Controls.Add(this.button_Clear);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(780, 412);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Продаж";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(290, 283);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "До сплати";
-            // 
-            // textBox_Sum
-            // 
-            this.textBox_Sum.Location = new System.Drawing.Point(358, 283);
-            this.textBox_Sum.Name = "textBox_Sum";
-            this.textBox_Sum.Size = new System.Drawing.Size(184, 20);
-            this.textBox_Sum.TabIndex = 8;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(290, 7);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(476, 238);
-            this.listBox2.TabIndex = 7;
-            // 
-            // button_Sell
-            // 
-            this.button_Sell.Location = new System.Drawing.Point(8, 317);
-            this.button_Sell.Name = "button_Sell";
-            this.button_Sell.Size = new System.Drawing.Size(761, 89);
-            this.button_Sell.TabIndex = 6;
-            this.button_Sell.Text = "Продати";
-            this.button_Sell.UseVisualStyleBackColor = true;
-            this.button_Sell.Click += new System.EventHandler(this.button_Sell_Click);
-            // 
-            // button_Add
-            // 
-            this.button_Add.Location = new System.Drawing.Point(8, 277);
-            this.button_Add.Name = "button_Add";
-            this.button_Add.Size = new System.Drawing.Size(276, 31);
-            this.button_Add.TabIndex = 4;
-            this.button_Add.Text = "Додати у замовлення";
-            this.button_Add.UseVisualStyleBackColor = true;
-            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(8, 7);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 264);
-            this.listBox1.TabIndex = 3;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // button_Clear
-            // 
-            this.button_Clear.Location = new System.Drawing.Point(290, 251);
-            this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(480, 20);
-            this.button_Clear.TabIndex = 2;
-            this.button_Clear.Text = "Очистити";
-            this.button_Clear.UseVisualStyleBackColor = true;
-            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
-            // 
-            // TabPage2
-            // 
-            this.TabPage2.Controls.Add(this.listBox3);
-            this.TabPage2.Controls.Add(this.button_WriteOff);
-            this.TabPage2.Location = new System.Drawing.Point(4, 22);
-            this.TabPage2.Name = "TabPage2";
-            this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(780, 412);
-            this.TabPage2.TabIndex = 1;
-            this.TabPage2.Text = "Списання";
-            this.TabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(8, 6);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(274, 329);
-            this.listBox3.TabIndex = 2;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
-            // 
-            // button_WriteOff
-            // 
-            this.button_WriteOff.Location = new System.Drawing.Point(8, 353);
-            this.button_WriteOff.Name = "button_WriteOff";
-            this.button_WriteOff.Size = new System.Drawing.Size(274, 53);
-            this.button_WriteOff.TabIndex = 1;
-            this.button_WriteOff.Text = "Списати";
-            this.button_WriteOff.UseVisualStyleBackColor = true;
-            this.button_WriteOff.Click += new System.EventHandler(this.button_WriteOff_Click);
-            // 
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.tabPage4);
             this.metroTabControl1.Controls.Add(this.tabPage5);
             this.metroTabControl1.Controls.Add(this.tabPage6);
-            this.metroTabControl1.Location = new System.Drawing.Point(4, 444);
+            this.metroTabControl1.Location = new System.Drawing.Point(12, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(784, 394);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
@@ -336,9 +134,8 @@
             this.textbox_summaryPrice.CustomButton.UseSelectable = true;
             this.textbox_summaryPrice.CustomButton.Visible = false;
             this.textbox_summaryPrice.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textbox_summaryPrice.Lines = new string[] {
-        "100 грн"};
-            this.textbox_summaryPrice.Location = new System.Drawing.Point(436, 212);
+            this.textbox_summaryPrice.Lines = new string[] { "100 грн" };
+            this.textbox_summaryPrice.Location = new System.Drawing.Point(456, 212);
             this.textbox_summaryPrice.MaxLength = 30;
             this.textbox_summaryPrice.Name = "textbox_summaryPrice";
             this.textbox_summaryPrice.PasswordChar = '\0';
@@ -358,7 +155,7 @@
             // 
             // metroLabel3
             // 
-            this.metroLabel3.Location = new System.Drawing.Point(348, 211);
+            this.metroLabel3.Location = new System.Drawing.Point(368, 211);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(97, 31);
             this.metroLabel3.TabIndex = 8;
@@ -368,9 +165,9 @@
             // button_clearOrder
             // 
             this.button_clearOrder.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.button_clearOrder.Location = new System.Drawing.Point(348, 165);
+            this.button_clearOrder.Location = new System.Drawing.Point(368, 165);
             this.button_clearOrder.Name = "button_clearOrder";
-            this.button_clearOrder.Size = new System.Drawing.Size(408, 25);
+            this.button_clearOrder.Size = new System.Drawing.Size(388, 25);
             this.button_clearOrder.TabIndex = 7;
             this.button_clearOrder.Text = "Очистити замовлення";
             this.button_clearOrder.UseSelectable = true;
@@ -379,7 +176,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(348, 3);
+            this.metroLabel2.Location = new System.Drawing.Point(368, 3);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(85, 19);
             this.metroLabel2.TabIndex = 6;
@@ -389,10 +186,10 @@
             // 
             this.listview_sellOrders.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.listview_sellOrders.FullRowSelect = true;
-            this.listview_sellOrders.Location = new System.Drawing.Point(348, 25);
+            this.listview_sellOrders.Location = new System.Drawing.Point(368, 25);
             this.listview_sellOrders.Name = "listview_sellOrders";
             this.listview_sellOrders.OwnerDraw = true;
-            this.listview_sellOrders.Size = new System.Drawing.Size(408, 134);
+            this.listview_sellOrders.Size = new System.Drawing.Size(388, 134);
             this.listview_sellOrders.TabIndex = 5;
             this.listview_sellOrders.UseCompatibleStateImageBehavior = false;
             this.listview_sellOrders.UseSelectable = true;
@@ -411,7 +208,7 @@
             this.button_addOrder.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.button_addOrder.Location = new System.Drawing.Point(13, 211);
             this.button_addOrder.Name = "button_addOrder";
-            this.button_addOrder.Size = new System.Drawing.Size(329, 31);
+            this.button_addOrder.Size = new System.Drawing.Size(349, 31);
             this.button_addOrder.TabIndex = 3;
             this.button_addOrder.Text = "Додати у замовлення";
             this.button_addOrder.UseSelectable = true;
@@ -424,7 +221,7 @@
             this.listview_sells.Location = new System.Drawing.Point(13, 25);
             this.listview_sells.Name = "listview_sells";
             this.listview_sells.OwnerDraw = true;
-            this.listview_sells.Size = new System.Drawing.Size(329, 180);
+            this.listview_sells.Size = new System.Drawing.Size(349, 180);
             this.listview_sells.TabIndex = 2;
             this.listview_sells.UseCompatibleStateImageBehavior = false;
             this.listview_sells.UseSelectable = true;
@@ -605,18 +402,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 884);
+            this.ClientSize = new System.Drawing.Size(826, 429);
             this.Controls.Add(this.metroTabControl1);
-            this.Controls.Add(this.tabControl1);
             this.Name = "WorkShop";
             this.Text = "WorkShop";
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.TabPage2.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
@@ -629,29 +418,10 @@
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.Button button_Return;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_Sum;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button_Sell;
-        private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button_Clear;
-        private System.Windows.Forms.TabPage TabPage2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Button button_WriteOff;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private System.Windows.Forms.TabPage tabPage4;
         private MetroFramework.Controls.MetroPanel metroPanel1;

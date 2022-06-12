@@ -21,7 +21,11 @@ namespace CrmUI.Catalog
 
             this.db = db;
 
-            //TestData(db);
+            if (!db.Products.Any())
+            {
+                TestData(db);
+            }
+            
             UpdateCatalog();
 
         }
