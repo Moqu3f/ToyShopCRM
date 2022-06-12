@@ -46,3 +46,15 @@ C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CoreCompileInputs.cache
 C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
 C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.dll
 C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.pdb
+D:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.dll.config
+D:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.dll
+D:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.pdb
+D:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.dll
+D:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.xml
+D:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.AssemblyReference.cache
+D:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CoreCompileInputs.cache
+D:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
+D:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.dll
+D:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.pdb
