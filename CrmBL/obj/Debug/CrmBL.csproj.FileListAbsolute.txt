@@ -34,3 +34,15 @@ D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\o
 D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
 D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.dll
 D:\Working\Freelance\Интернет магазин игрушек\test\CrmBL\obj\Debug\CrmBL.pdb
+C:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.dll.config
+C:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.dll
+C:\ToyShopCRM\CrmBL\bin\Debug\CrmBL.pdb
+C:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.dll
+C:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.SqlServer.dll
+C:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.xml
+C:\ToyShopCRM\CrmBL\bin\Debug\EntityFramework.SqlServer.xml
+C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.AssemblyReference.cache
+C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CoreCompileInputs.cache
+C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.csproj.CopyComplete
+C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.dll
+C:\ToyShopCRM\CrmBL\obj\Debug\CrmBL.pdb

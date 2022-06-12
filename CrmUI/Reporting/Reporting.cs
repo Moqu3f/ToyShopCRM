@@ -7,43 +7,33 @@ namespace CrmUI.Reporting
 {
     public partial class Reporting : Form
     {
-        private string[] tovarArray;
         private string[] financeArray;
         private CrmContext db;
         
         public Reporting(CrmContext db)
         {
-            tovarArray = new string[2];
             InitializeComponent();
             this.db = db;
             ListViewItem itm;
             var listProduct = db.Products.ToList();
-            
             var result = from sell in db.Sells
                 join p in db.Products on sell.ProductId equals p.Id
                 join c in db.Checks on sell.CheckId equals c.Id
                 select new
                 {
-                    SheckCode = c.Id,
+                    SheckCode = sell.SellId,
+                    ProductCode = p.Id,
                     Price = p.Price,
                     Status = c.Status
                 };
-
-            financeArray = new string[3];
-            // listView_Finance.View = View.Details;
-            // listView_Finance.GridLines = true;
-            // listView_Finance.FullRowSelect = true;
-            // listView_Finance.Columns.Add("Код чека");
-            // listView_Finance.Columns.Add("Прибуток");
-            // listView_Finance.Columns.Add("Статус");
-            
+            financeArray = new string[4];
             metroListView1.BeginUpdate();
             metroListView1.Items.Clear();
             metroListView1.View = View.Details;
-            metroListView1.Columns.Add("Код чека");
-            metroListView1.Columns.Add("Прибуток");
+            metroListView1.Columns.Add("Id продажі");
+            metroListView1.Columns.Add("Код товару");
+            metroListView1.Columns.Add("Ціна");
             metroListView1.Columns.Add("Статус");
-            
             ListViewItem lvi;
             foreach (var item in result.ToList())
             {
@@ -52,62 +42,37 @@ namespace CrmUI.Reporting
 
                 if (item.Status == Status.Sells)
                 {
-                    financeArray[2] = "Продажа";
-                    financeArray[1] = item.Price.ToString();
-
+                    financeArray[1] = item.ProductCode.ToString();
+                    financeArray[2] = item.Price.ToString();
+                    financeArray[3] = "Продажа";
                 }
 
                 if (item.Status == Status.WriteOff)
                 {
-                    financeArray[2] = "Списання";
-                    financeArray[1] = item.Price * -1 + " ";
+                    financeArray[1] = item.ProductCode  + " ";
+                    financeArray[2] = item.Price * -1 + " ";
+                    financeArray[3] = "Списання";
                 }
 
                 if (item.Status == Status.Return)
                 {
-                    financeArray[2] = "Повернення";
-                    financeArray[1] = "0";
+                    financeArray[1] = item.ProductCode  + " ";
+                    financeArray[2] = "0";
+                    financeArray[3] = "Повернення";
 
                 }
-                
-                // itm = new ListViewItem(financeArray);
-                // listView_Finance.Items.Add(itm);
-                
                 lvi = new ListViewItem(financeArray);
                 metroListView1.Items.Add(lvi);
             }
-
-            
             metroListView1.Columns[0].TextAlign = HorizontalAlignment.Right;
             metroListView1.Columns[1].TextAlign = HorizontalAlignment.Center;
             metroListView1.Columns[2].TextAlign = HorizontalAlignment.Left;
-            
+            metroListView1.Columns[3].TextAlign = HorizontalAlignment.Left;
             metroListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             metroListView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-            
             metroListView1.EndUpdate();
             metroListView1.AllowSorting = true;
-                
-            // listView1.View = View.Details;
-            // listView1.GridLines = true;
-            // listView1.FullRowSelect = true;
-            //
-            // listView1.Columns.Add("ProductName", 100);
-            // listView1.Columns.Add("ProductPrice", 100);
-            //
-            // foreach (var item in listProduct)
-            // {
-            //     tovarArray[0] = item.Name;
-            //     tovarArray[1] = item.Price.ToString();
-            //    
-            //     itm = new ListViewItem(tovarArray);
-            //     listView1.Items.Add(itm);
-            // }
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

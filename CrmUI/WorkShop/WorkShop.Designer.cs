@@ -83,7 +83,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(290, 277);
+            this.label1.Location = new System.Drawing.Point(290, 283);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 31);
             this.label1.TabIndex = 9;
