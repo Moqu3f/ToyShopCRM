@@ -70,7 +70,7 @@ namespace CrmUI.WorkShop
             listview_sells.EndUpdate();
             listview_sells.AllowSorting = true;
             #endregion
-            
+
             #region ListView MetroListSellOrders
 
             SellsItemsOrder = new string[4];
@@ -90,9 +90,9 @@ namespace CrmUI.WorkShop
 
 
             #endregion
-            
-            
-            
+
+
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -156,7 +156,7 @@ namespace CrmUI.WorkShop
         }
 
 
-        
+
 
         private Check ItemReturn = null;
 
@@ -167,15 +167,15 @@ namespace CrmUI.WorkShop
             dataGridView1.Refresh();
             ItemReturn = (Check)listBox4.SelectedItem;
             var result = from sell in db.Sells
-                join p in db.Products on sell.ProductId equals p.Id
-                join c in db.Checks on sell.CheckId equals c.Id
-                where
-                    c.Id == ItemReturn.Id
-                select new
-                {
-                    Name = p.Name,
-                    Price = p.Price,
-                };
+                         join p in db.Products on sell.ProductId equals p.Id
+                         join c in db.Checks on sell.CheckId equals c.Id
+                         where
+                             c.Id == ItemReturn.Id
+                         select new
+                         {
+                             Name = p.Name,
+                             Price = p.Price,
+                         };
 
             dataGridView1.DataSource = result.ToList();
         }
@@ -192,19 +192,19 @@ namespace CrmUI.WorkShop
             MessageBox.Show($"Покупку №{ItemReturn.Id} повернено на суму {sum}");
             listBox4.DataSource = db.Checks.Where(q => q.Status == Status.Sells).ToList();
         }
-            string[] SellsItemsOrder = new string[4];
+        string[] SellsItemsOrder = new string[4];
 
         private void button_addOrder_Click(object sender, EventArgs e)
         {
             #region MetroListViews to List<Product>
-                var a = listview_sells.SelectedItems;
-                var code = a[0].Text;
-                var selectedItem = db.Products.Where(q => q.Code == code).FirstOrDefault();
-                product_SellItem.Add(selectedItem);
+            var a = listview_sells.SelectedItems;
+            var code = a[0].Text;
+            var selectedItem = db.Products.Where(q => q.Code == code).FirstOrDefault();
+            product_SellItem.Add(selectedItem);
             #endregion
 
             InitialSellListView(product_SellItem);
-            
+
             _cart.Add(selectedItem);
             textbox_summaryPrice.Text = _cart.Price + "";
 
@@ -215,7 +215,7 @@ namespace CrmUI.WorkShop
             listview_sellOrders.BeginUpdate();
             listview_sellOrders.Items.Clear();
             SellsItemsOrder = new string[4];
-            
+
             ListViewItem listViewItemSells;
             foreach (var item in product_SellItem)
             {
@@ -232,36 +232,32 @@ namespace CrmUI.WorkShop
 
 
 
-            // CashDesk _cashDesk = new CashDesk(db)
-            // {
-            //     IsModel = false
-            // };
-            // _cashDesk.AddCard(_cart);
-            // _cashDesk.Sell(Status.Sells);
-            // MessageBox.Show("Успішна покупка");
-            // textbox_summaryPrice.Text = "0";
-            // listview_sellOrders.Items.Clear();
-            // _cart = new Cart();
+        // CashDesk _cashDesk = new CashDesk(db)
+        // {
+        //     IsModel = false
+        // };
+        // _cashDesk.AddCard(_cart);
+        // _cashDesk.Sell(Status.Sells);
+        // MessageBox.Show("Успішна покупка");
+        // textbox_summaryPrice.Text = "0";
+        // listview_sellOrders.Items.Clear();
+        // _cart = new Cart();
 
-            private void button_sellOrder_Click_1(object sender, EventArgs e)
+        private void button_sellOrder_Click_1(object sender, EventArgs e)
+        {
+            CashDesk _cashDesk = new CashDesk(db)
             {
-                CashDesk _cashDesk = new CashDesk(db)
-                {
-                    IsModel = false
-                };
-                _cashDesk.AddCard(_cart);
-                _cashDesk.Sell(Status.Sells);
-                MessageBox.Show("Успішна покупка");
-                textbox_summaryPrice.Text = "0";
-                listview_sellOrders.Items.Clear();
-                _cart = new Cart();
+                IsModel = false
+            };
+            _cashDesk.AddCard(_cart);
+            _cashDesk.Sell(Status.Sells);
+            MessageBox.Show("Успішна покупка");
+            textbox_summaryPrice.Text = "0";
+            listview_sellOrders.Items.Clear();
+            _cart = new Cart();
 
-            }
+        }
 
-            private void button_clearOrder_Click(object sender, EventArgs e)
-            {
-                throw new System.NotImplementedException();
-            }
 
         private void button_clearOrder_Click_1(object sender, EventArgs e)
         {
