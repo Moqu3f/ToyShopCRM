@@ -33,7 +33,7 @@ namespace CrmUI.Reporting
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.textbox_findByCode = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button_all = new MetroFramework.Controls.MetroRadioButton();
             this.button_day = new MetroFramework.Controls.MetroRadioButton();
@@ -71,7 +71,7 @@ namespace CrmUI.Reporting
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.metroTextBox1);
+            this.groupBox2.Controls.Add(this.textbox_findByCode);
             this.groupBox2.Location = new System.Drawing.Point(637, 49);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(277, 48);
@@ -79,35 +79,35 @@ namespace CrmUI.Reporting
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Код товару";
             // 
-            // metroTextBox1
+            // textbox_findByCode
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(243, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(6, 19);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(265, 23);
-            this.metroTextBox1.TabIndex = 4;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.textbox_findByCode.CustomButton.Image = null;
+            this.textbox_findByCode.CustomButton.Location = new System.Drawing.Point(243, 1);
+            this.textbox_findByCode.CustomButton.Name = "";
+            this.textbox_findByCode.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textbox_findByCode.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textbox_findByCode.CustomButton.TabIndex = 1;
+            this.textbox_findByCode.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textbox_findByCode.CustomButton.UseSelectable = true;
+            this.textbox_findByCode.CustomButton.Visible = false;
+            this.textbox_findByCode.Lines = new string[0];
+            this.textbox_findByCode.Location = new System.Drawing.Point(6, 19);
+            this.textbox_findByCode.MaxLength = 32767;
+            this.textbox_findByCode.Name = "textbox_findByCode";
+            this.textbox_findByCode.PasswordChar = '\0';
+            this.textbox_findByCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textbox_findByCode.SelectedText = "";
+            this.textbox_findByCode.SelectionLength = 0;
+            this.textbox_findByCode.SelectionStart = 0;
+            this.textbox_findByCode.ShortcutsEnabled = true;
+            this.textbox_findByCode.Size = new System.Drawing.Size(265, 23);
+            this.textbox_findByCode.TabIndex = 4;
+            this.textbox_findByCode.UseSelectable = true;
+            this.textbox_findByCode.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textbox_findByCode.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // groupBox1
             // 
@@ -167,7 +167,7 @@ namespace CrmUI.Reporting
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.tabPage5);
-            this.metroTabControl1.Location = new System.Drawing.Point(13, 17);
+            this.metroTabControl1.Location = new System.Drawing.Point(13, 12);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(618, 359);
@@ -258,7 +258,7 @@ namespace CrmUI.Reporting
         private MetroFramework.Controls.MetroRadioButton button_mounth;
         private MetroFramework.Controls.MetroRadioButton button_day;
         private MetroFramework.Controls.MetroRadioButton button_all;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox textbox_findByCode;
 
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroRadioButton button_year;
