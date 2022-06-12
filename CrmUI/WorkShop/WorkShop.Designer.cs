@@ -274,7 +274,7 @@
             this.metroTabControl1.Controls.Add(this.tabPage6);
             this.metroTabControl1.Location = new System.Drawing.Point(4, 444);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(784, 394);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
@@ -429,6 +429,7 @@
             this.listview_sells.UseCompatibleStateImageBehavior = false;
             this.listview_sells.UseSelectable = true;
             this.listview_sells.View = System.Windows.Forms.View.Details;
+            this.listview_sells.SelectedIndexChanged += new System.EventHandler(this.listview_sells_SelectedIndexChanged);
             // 
             // tabPage5
             // 
@@ -492,18 +493,21 @@
             this.button_writteOffMetro.TabIndex = 4;
             this.button_writteOffMetro.Text = "Списати";
             this.button_writteOffMetro.UseSelectable = true;
+            this.button_writteOffMetro.Click += new System.EventHandler(this.button_writteOffMetro_Click);
             // 
             // listview_writeoff
             // 
             this.listview_writeoff.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.listview_writeoff.FullRowSelect = true;
             this.listview_writeoff.Location = new System.Drawing.Point(24, 48);
+            this.listview_writeoff.MultiSelect = false;
             this.listview_writeoff.Name = "listview_writeoff";
             this.listview_writeoff.OwnerDraw = true;
             this.listview_writeoff.Size = new System.Drawing.Size(328, 196);
             this.listview_writeoff.TabIndex = 3;
             this.listview_writeoff.UseCompatibleStateImageBehavior = false;
             this.listview_writeoff.UseSelectable = true;
+            this.listview_writeoff.SelectedIndexChanged += new System.EventHandler(this.listview_writeoff_SelectedIndexChanged);
             // 
             // metroListView1
             // 
@@ -570,6 +574,7 @@
             this.button_returnAction.TabIndex = 4;
             this.button_returnAction.Text = "Повернути";
             this.button_returnAction.UseSelectable = true;
+            this.button_returnAction.Click += new System.EventHandler(this.button_returnAction_Click);
             // 
             // listview_checkItems
             // 
@@ -594,6 +599,7 @@
             this.listview_returnedChecks.TabIndex = 2;
             this.listview_returnedChecks.UseCompatibleStateImageBehavior = false;
             this.listview_returnedChecks.UseSelectable = true;
+            this.listview_returnedChecks.SelectedIndexChanged += new System.EventHandler(this.listview_returnedChecks_SelectedIndexChanged);
             // 
             // WorkShop
             // 

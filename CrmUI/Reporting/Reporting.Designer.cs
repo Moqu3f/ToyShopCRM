@@ -72,7 +72,7 @@ namespace CrmUI.Reporting
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.textbox_findByCode);
-            this.groupBox2.Location = new System.Drawing.Point(637, 49);
+            this.groupBox2.Location = new System.Drawing.Point(671, 50);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(277, 48);
             this.groupBox2.TabIndex = 4;
@@ -108,6 +108,7 @@ namespace CrmUI.Reporting
             this.textbox_findByCode.UseSelectable = true;
             this.textbox_findByCode.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textbox_findByCode.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.textbox_findByCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textbox_findByCode_KeyUp);
             // 
             // groupBox1
             // 
@@ -116,7 +117,7 @@ namespace CrmUI.Reporting
             this.groupBox1.Controls.Add(this.button_day);
             this.groupBox1.Controls.Add(this.button_mounth);
             this.groupBox1.Controls.Add(this.button_year);
-            this.groupBox1.Location = new System.Drawing.Point(637, 103);
+            this.groupBox1.Location = new System.Drawing.Point(671, 104);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(277, 149);
             this.groupBox1.TabIndex = 3;
@@ -131,8 +132,10 @@ namespace CrmUI.Reporting
             this.button_all.Size = new System.Drawing.Size(104, 24);
             this.button_all.TabIndex = 3;
             this.button_all.TabStop = true;
+            this.button_all.Tag = "All";
             this.button_all.Text = "Усі";
             this.button_all.UseSelectable = true;
+            this.button_all.CheckedChanged += new System.EventHandler(this.button_all_CheckedChanged);
             // 
             // button_day
             // 
@@ -140,8 +143,10 @@ namespace CrmUI.Reporting
             this.button_day.Name = "button_day";
             this.button_day.Size = new System.Drawing.Size(104, 24);
             this.button_day.TabIndex = 2;
+            this.button_day.Tag = "Day";
             this.button_day.Text = "День";
             this.button_day.UseSelectable = true;
+            this.button_day.CheckedChanged += new System.EventHandler(this.button_all_CheckedChanged);
             // 
             // button_mounth
             // 
@@ -149,8 +154,10 @@ namespace CrmUI.Reporting
             this.button_mounth.Name = "button_mounth";
             this.button_mounth.Size = new System.Drawing.Size(104, 24);
             this.button_mounth.TabIndex = 1;
+            this.button_mounth.Tag = "Mounth";
             this.button_mounth.Text = "Місяць";
             this.button_mounth.UseSelectable = true;
+            this.button_mounth.CheckedChanged += new System.EventHandler(this.button_all_CheckedChanged);
             // 
             // button_year
             // 
@@ -158,8 +165,10 @@ namespace CrmUI.Reporting
             this.button_year.Name = "button_year";
             this.button_year.Size = new System.Drawing.Size(104, 24);
             this.button_year.TabIndex = 0;
+            this.button_year.Tag = "Year";
             this.button_year.Text = "Рік";
             this.button_year.UseSelectable = true;
+            this.button_year.CheckedChanged += new System.EventHandler(this.button_all_CheckedChanged);
             // 
             // metroTabControl1
             // 
@@ -170,7 +179,7 @@ namespace CrmUI.Reporting
             this.metroTabControl1.Location = new System.Drawing.Point(13, 12);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(618, 359);
+            this.metroTabControl1.Size = new System.Drawing.Size(652, 390);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -182,7 +191,7 @@ namespace CrmUI.Reporting
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(610, 317);
+            this.metroTabPage1.Size = new System.Drawing.Size(644, 348);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Фінанси";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -196,10 +205,11 @@ namespace CrmUI.Reporting
             this.metroListView1.Location = new System.Drawing.Point(0, 0);
             this.metroListView1.Name = "metroListView1";
             this.metroListView1.OwnerDraw = true;
-            this.metroListView1.Size = new System.Drawing.Size(610, 314);
+            this.metroListView1.Size = new System.Drawing.Size(641, 345);
             this.metroListView1.TabIndex = 2;
             this.metroListView1.UseCompatibleStateImageBehavior = false;
             this.metroListView1.UseSelectable = true;
+            this.metroListView1.SelectedIndexChanged += new System.EventHandler(this.metroListView1_SelectedIndexChanged);
             // 
             // metroTabPage2
             // 
@@ -208,7 +218,7 @@ namespace CrmUI.Reporting
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(610, 317);
+            this.metroTabPage2.Size = new System.Drawing.Size(644, 348);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Залишки";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -222,7 +232,7 @@ namespace CrmUI.Reporting
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(610, 317);
+            this.metroTabPage3.Size = new System.Drawing.Size(644, 348);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Продано";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -233,7 +243,7 @@ namespace CrmUI.Reporting
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(610, 317);
+            this.tabPage5.Size = new System.Drawing.Size(644, 348);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "Списано";
             // 
@@ -251,6 +261,7 @@ namespace CrmUI.Reporting
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.GroupBox groupBox2;
