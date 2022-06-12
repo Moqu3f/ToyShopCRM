@@ -43,13 +43,25 @@ namespace CrmUI.Reporting
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroListView1 = new MetroFramework.Controls.MetroListView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.metroListView_Product = new MetroFramework.Controls.MetroListView();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.metroListView_Sell = new MetroFramework.Controls.MetroListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.metroListView_WriteOff = new MetroFramework.Controls.MetroListView();
             this.metroPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -178,8 +190,8 @@ namespace CrmUI.Reporting
             this.metroTabControl1.Controls.Add(this.tabPage5);
             this.metroTabControl1.Location = new System.Drawing.Point(13, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(652, 390);
+            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.Size = new System.Drawing.Size(652, 400);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -191,7 +203,7 @@ namespace CrmUI.Reporting
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(644, 348);
+            this.metroTabPage1.Size = new System.Drawing.Size(644, 358);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Фінанси";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -213,39 +225,103 @@ namespace CrmUI.Reporting
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.panel1);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(644, 348);
+            this.metroTabPage2.Size = new System.Drawing.Size(644, 358);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Залишки";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.metroListView_Product);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(638, 349);
+            this.panel1.TabIndex = 2;
+            // 
+            // metroListView_Product
+            // 
+            this.metroListView_Product.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.metroListView_Product.FullRowSelect = true;
+            this.metroListView_Product.Location = new System.Drawing.Point(3, 3);
+            this.metroListView_Product.Name = "metroListView_Product";
+            this.metroListView_Product.OwnerDraw = true;
+            this.metroListView_Product.Size = new System.Drawing.Size(632, 339);
+            this.metroListView_Product.TabIndex = 0;
+            this.metroListView_Product.UseCompatibleStateImageBehavior = false;
+            this.metroListView_Product.UseSelectable = true;
+            // 
             // metroTabPage3
             // 
+            this.metroTabPage3.Controls.Add(this.panel2);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(644, 348);
+            this.metroTabPage3.Size = new System.Drawing.Size(644, 358);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Продано";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.metroListView_Sell);
+            this.panel2.Location = new System.Drawing.Point(-4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(645, 359);
+            this.panel2.TabIndex = 2;
+            // 
+            // metroListView_Sell
+            // 
+            this.metroListView_Sell.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.metroListView_Sell.FullRowSelect = true;
+            this.metroListView_Sell.Location = new System.Drawing.Point(7, 3);
+            this.metroListView_Sell.Name = "metroListView_Sell";
+            this.metroListView_Sell.OwnerDraw = true;
+            this.metroListView_Sell.Size = new System.Drawing.Size(635, 349);
+            this.metroListView_Sell.TabIndex = 0;
+            this.metroListView_Sell.UseCompatibleStateImageBehavior = false;
+            this.metroListView_Sell.UseSelectable = true;
+            // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.panel3);
             this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(644, 348);
+            this.tabPage5.Size = new System.Drawing.Size(644, 358);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "Списано";
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.metroListView_WriteOff);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(638, 352);
+            this.panel3.TabIndex = 0;
+            // 
+            // metroListView_WriteOff
+            // 
+            this.metroListView_WriteOff.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.metroListView_WriteOff.FullRowSelect = true;
+            this.metroListView_WriteOff.Location = new System.Drawing.Point(3, 3);
+            this.metroListView_WriteOff.Name = "metroListView_WriteOff";
+            this.metroListView_WriteOff.OwnerDraw = true;
+            this.metroListView_WriteOff.Size = new System.Drawing.Size(632, 346);
+            this.metroListView_WriteOff.TabIndex = 0;
+            this.metroListView_WriteOff.UseCompatibleStateImageBehavior = false;
+            this.metroListView_WriteOff.UseSelectable = true;
             // 
             // Reporting
             // 
@@ -260,9 +336,24 @@ namespace CrmUI.Reporting
             this.groupBox1.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.metroTabPage3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
+
+        private System.Windows.Forms.Panel panel3;
+        private MetroFramework.Controls.MetroListView metroListView_WriteOff;
+
+        private System.Windows.Forms.Panel panel2;
+        private MetroFramework.Controls.MetroListView metroListView_Sell;
+
+        private MetroFramework.Controls.MetroListView metroListView_Product;
+
+        private System.Windows.Forms.Panel panel1;
 
         private System.Windows.Forms.GroupBox groupBox2;
 
