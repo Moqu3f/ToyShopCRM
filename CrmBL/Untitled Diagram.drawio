@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-15T15:33:17.742Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="oXndhaFpDK18HXpTeQWN" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-15T15:34:39.487Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="DCpk4edWkFNm0Vv4eUjB" version="20.0.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2839" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3685" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -223,7 +223,7 @@
           <mxGeometry x="1080" y="490" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-64" value="Товар знайдено" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="920" y="562.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="920" y="557.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-65" value="Товар не знайдено" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1101" y="557.5" width="60" height="30" as="geometry" />
@@ -284,7 +284,7 @@
           <mxGeometry x="1309.5" y="545" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-92" value="Товар не знайдено" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1490.5" y="540" width="60" height="30" as="geometry" />
+          <mxGeometry x="1500" y="557.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IhnhWhZBl7mTdEsvZuZf-93" target="IhnhWhZBl7mTdEsvZuZf-94">
           <mxGeometry relative="1" as="geometry" />
@@ -302,7 +302,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-94" value="Списання товару" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1270" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="1260" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IhnhWhZBl7mTdEsvZuZf-98">
           <mxGeometry relative="1" as="geometry">
@@ -319,36 +319,41 @@
           <mxGeometry x="1720.5" y="390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-102" value="Чек знайдено" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1660.5" y="555" width="60" height="30" as="geometry" />
+          <mxGeometry x="1660.5" y="557.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-103" value="Чек не знайдено" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1850" y="562.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1850" y="555" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;endArrow=none;endFill=0;" edge="1" source="IhnhWhZBl7mTdEsvZuZf-105" target="IhnhWhZBl7mTdEsvZuZf-107" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-105" value="Пошук чеку" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1700" y="577.5" width="160" height="80" as="geometry" />
+          <mxGeometry x="1700.5" y="559.5" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;endArrow=none;endFill=0;" edge="1" source="IhnhWhZBl7mTdEsvZuZf-107" target="IhnhWhZBl7mTdEsvZuZf-105" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1680" y="800" />
               <mxPoint x="1880" y="800" />
-              <mxPoint x="1880" y="617" />
+              <mxPoint x="1880" y="600" />
+              <mxPoint x="1861" y="600" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IhnhWhZBl7mTdEsvZuZf-107" value="Списання товару" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="IhnhWhZBl7mTdEsvZuZf-107" value="Повернення товару" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1620" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;endArrow=none;endFill=0;" edge="1" source="IhnhWhZBl7mTdEsvZuZf-109" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1780.0526315789475" y="819.9999999999998" as="targetPoint" />
+            <mxPoint x="1780.5526315789475" y="799.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1780.5" y="820" />
+              <mxPoint x="1780.5" y="820" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="IhnhWhZBl7mTdEsvZuZf-109" value="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1765" y="860" width="30" height="30" as="geometry" />
+          <mxGeometry x="1765.5" y="840" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
